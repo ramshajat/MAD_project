@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#235"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:id="@+id/scoreTV"
+                android:layout_gravity="center"
+                android:textColor="#afa"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#345"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#ccf"
+                android:text="@string/player"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#fa0"
+                android:text="@string/player_name"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/playerNameTV"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#345"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/check"
+                    android:layout_marginRight="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6f6"
+                    android:textSize="18sp"
+                    android:id="@+id/rightTV"
+                    android:text="@string/_0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/wrong"
+                    android:layout_marginRight="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f66"
+                    android:textSize="18sp"
+                    android:id="@+id/wrongTV"
+                    android:text="@string/_0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#123"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/numOneTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="@string/_00"
+                android:textColor="#fff"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:id="@+id/operatorTV"
+                android:text="@string/operator"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:id="@+id/numTwoTV"
+                android:text="@string/_00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="26dp"
+                android:textColor="#f70"
+                android:layout_margin="10dp"
+                android:text="@string/options"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/optionsRG">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_00"
+                    android:background="@drawable/options_bg"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:padding="6dp"
+                    android:id="@+id/optionOne"
+                    android:textSize="25sp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_00"
+                    android:background="@drawable/options_bg"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:padding="6dp"
+                    android:id="@+id/optionTwo"
+                    android:textSize="25sp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_00"
+                    android:background="@drawable/options_bg"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:padding="6dp"
+                    android:id="@+id/optionThree"
+                    android:textSize="25sp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_00"
+                    android:background="@drawable/options_bg"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:padding="6dp"
+                    android:id="@+id/optionFour"
+                    android:textSize="25sp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_margin="5dp"
+                android:fontFamily="monospace"
+                android:drawableLeft="@drawable/check"
+                android:background="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/checkBT"
+                android:text="@string/check_your_answer"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

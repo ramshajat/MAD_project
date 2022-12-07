@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#235"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/logo_main"
+        android:layout_margin="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f80"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:fontFamily="monospace"
+        android:text="High Score"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="#6f6"
+        android:textStyle="bold"
+        android:id="@+id/highScoreTV"
+        android:fontFamily="casual"
+        android:text="33"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press Back to Continue"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>

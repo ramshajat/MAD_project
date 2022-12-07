@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/player_menu_bg"
+    tools:context=".PlayMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:background="#7000"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:fontFamily="monospace"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:id="@+id/nameTV"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:textColor="#fa0"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@mipmap/difficulty_logo"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_marginBottom="10dp"
+            android:text="Select Level"
+            android:fontFamily="monospace"
+            android:textColor="#ff0"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#fff"
+            android:textSize="19sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/easyBT"
+            android:fontFamily="monospace"
+            android:background="@drawable/round_select"
+            android:hint="Easy"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#fff"
+            android:textSize="19sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/mediumBT"
+            android:fontFamily="monospace"
+            android:background="@drawable/round_select"
+            android:hint="Medium"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#fff"
+            android:textSize="19sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/hardBT"
+            android:fontFamily="monospace"
+            android:background="@drawable/round_select"
+            android:hint="Hard"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
